@@ -1,0 +1,69 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #1f4037;  
+    background: -webkit-linear-gradient(to right, #99f2c8, #1f4037); 
+    background: linear-gradient(to right, #99f2c8, #1f4037); 
+}
+
+h1{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button{
+    font-size: xx-large;
+    background-color: unset;
+    padding: 1rem;
+    margin: 10px 20px;
+}
+
+button:hover{
+    transform: scale(1.1);
+}
+
+.escondido{
+    display: none !important;
+}
+
+#containerFoto, #containerFoto img{
+    height: 500px;
+}
+
+#spinner{
+    border: 16px solid, #f2f2f2, ;
+    border-top: 16px solid, #3498db;
+    border-radius: 10% ;
+    width: 120px;
+    height: 120px;
+    margin: 100px ;
+    animation: spin 2s , linear infinite;
+}
+
+@keyframes spin {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+#like:hover, #contenedorLikePerros{
+    background-color: #2ECCFA;
+}
+.contenedorPerros{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    border-radius: 50px;
+    max-width: 70vw;
+    margin: 10px 0;
+}
+
+.contenedorPerros img{
+    height: 100px;
+}
+#dislike:hover, #contenedorDislikePerros{
+    background-color: #F78181;
+}
